@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromoZap - As Melhores Ofertas Direto no Seu WhatsApp!</title>
+    <meta name="description" content="Entre no grupo PromoZap e receba as melhores ofertas e descontos de marketplaces diretamente no seu WhatsApp. Economize até 90% em produtos incríveis!">
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Lightning Canvas -->
+    <canvas id="lightning-canvas"></canvas>
+
+    <!-- Floating Electric Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Header / Logo Section -->
+        <header class="header" id="header">
+            <div class="logo-wrapper">
+                <div class="logo-glow"></div>
+                <img src="logo.jpg" alt="PromoZap Logo" class="logo" id="main-logo">
+                <div class="electric-ring"></div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                        <span>OFERTAS EXCLUSIVAS</span>
+                    </div>
+                    <h1 class="hero-title">
+                        As <span class="highlight">MELHORES</span> ofertas<br>
+                        direto no seu <span class="whatsapp-text">WhatsApp!</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Receba <strong>promoções imperdíveis</strong> dos maiores marketplaces do Brasil. 
+                        Descontos de até <span class="discount-highlight">90% OFF</span> todos os dias!
+                    </p>
+
+                    <!-- Stats Row -->
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="member-count">0</span>
+                                <span class="stat-label">Membros ativos</span>
+                            </div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                                    <line x1="7" y1="7" x2="7.01" y2="7"/>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Ofertas por dia</span>
+                            </div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Gratuito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-mascot">
+                    <div class="mascot-wrapper">
+                        <div class="mascot-glow"></div>
+                        <img src="mascote.jpg" alt="Mascote PromoZap" class="mascot-img" id="mascot-img">
+                        <div class="mascot-speech-bubble">
+                            <span>🔥 Tem oferta INSANA hoje!</span>
+                            <div class="speech-arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits" id="benefits-section">
+            <h2 class="section-title">Por que entrar no <span class="highlight">PromoZap</span>?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-delay="0">
+                    <div class="benefit-icon-wrapper">
+                        <div class="benefit-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <div class="icon-spark spark-1"></div>
+                        <div class="icon-spark spark-2"></div>
+                        <div class="icon-spark spark-3"></div>
+                    </div>
+                    <h3>Ofertas Relâmpago</h3>
+                    <p>Promoções que duram poucos minutos. Seja o primeiro a aproveitar antes que acabe!</p>
+                </div>
+                <div class="benefit-card" data-delay="100">
+                    <div class="benefit-icon-wrapper">
+                        <div class="benefit-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                                <line x1="7" y1="7" x2="7.01" y2="7"/>
+                            </svg>
+                        </div>
+                        <div class="icon-spark spark-1"></div>
+                        <div class="icon-spark spark-2"></div>
+                        <div class="icon-spark spark-3"></div>
+                    </div>
+                    <h3>Até 90% de Desconto</h3>
+                    <p>Descontos absurdos em produtos de grandes marketplaces como Amazon, Shopee e Mercado Livre.</p>
+                </div>
+                <div class="benefit-card" data-delay="200">
+                    <div class="benefit-icon-wrapper">
+                        <div class="benefit-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <div class="icon-spark spark-1"></div>
+                        <div class="icon-spark spark-2"></div>
+                        <div class="icon-spark spark-3"></div>
+                    </div>
+                    <h3>100% Confiável</h3>
+                    <p>Todas as ofertas são verificadas. Apenas links seguros de lojas oficiais e confiáveis.</p>
+                </div>
+                <div class="benefit-card" data-delay="300">
+                    <div class="benefit-icon-wrapper">
+                        <div class="benefit-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                                <line x1="1" y1="10" x2="23" y2="10"/>
+                            </svg>
+                        </div>
+                        <div class="icon-spark spark-1"></div>
+                        <div class="icon-spark spark-2"></div>
+                        <div class="icon-spark spark-3"></div>
+                    </div>
+                    <h3>Totalmente GRÁTIS</h3>
+                    <p>Não paga nada! Entre de graça e comece a economizar de verdade agora mesmo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketplace Logos -->
+        <section class="marketplaces" id="marketplaces-section">
+            <p class="marketplace-label">Ofertas dos maiores marketplaces</p>
+            <div class="marketplace-scroll">
+                <div class="marketplace-track">
+                    <span class="marketplace-name">Amazon</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Shopee</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Mercado Livre</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Magazine Luiza</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Casas Bahia</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">AliExpress</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Americanas</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Kabum</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <!-- Duplicate for seamless loop -->
+                    <span class="marketplace-name">Amazon</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Shopee</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Mercado Livre</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Magazine Luiza</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Casas Bahia</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">AliExpress</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Americanas</span>
+                    <span class="marketplace-dot">⚡</span>
+                    <span class="marketplace-name">Kabum</span>
+                    <span class="marketplace-dot">⚡</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="cta-section">
+            <div class="cta-card">
+                <div class="cta-electric-border"></div>
+                <div class="cta-content">
+                    <div class="urgency-badge">
+                        <div class="urgency-dot"></div>
+                        <span>⚠️ VAGAS LIMITADAS — Entre agora antes que feche!</span>
+                    </div>
+                    <h2 class="cta-title">Pronto para <span class="highlight">ECONOMIZAR</span>?</h2>
+                    <p class="cta-subtitle">Entre no grupo agora e nunca mais pague caro!</p>
+                    
+                    <a href="https://chat.whatsapp.com/KjgIaivEbFABrCuCK3BYes" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="cta-button" 
+                       id="cta-button">
+                        <div class="btn-lightning btn-lightning-left">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <div class="btn-content">
+                            <svg class="whatsapp-icon" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            <div class="btn-text">
+                                <span class="btn-main-text">ENTRAR NO GRUPO GRÁTIS</span>
+                                <span class="btn-sub-text">Clique aqui e entre agora!</span>
+                            </div>
+                        </div>
+                        <div class="btn-lightning btn-lightning-right">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <div class="btn-shine"></div>
+                    </a>
+
+                    <div class="cta-trust">
+                        <div class="trust-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Sem spam</span>
+                        </div>
+                        <div class="trust-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Pode sair quando quiser</span>
+                        </div>
+                        <div class="trust-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>100% gratuito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <img src="logo.jpg" alt="PromoZap" class="footer-logo">
+            <p>© 2025 PromoZap — Todas as ofertas verificadas.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
